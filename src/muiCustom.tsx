@@ -34,13 +34,12 @@ export const theme = createTheme({
   },
 });
 
-
 export const MyButton = styled(Button)({
   margin: 0,
   height: '4.6rem',
   fontSize: 16,
   padding: '6px 24px',
-  textTransform: 'none'
+  textTransform: 'none',
 });
 
 export const MyTextField = styled(TextField)({
@@ -49,13 +48,13 @@ export const MyTextField = styled(TextField)({
   fontSize: 30,
   '& label.MuiFormLabel-root': {
     fontSize: 18,
-    lineHeight: '18px'
+    lineHeight: '18px',
   },
   '& div.MuiInputBase-root, & input.MuiInputBase-input': {
     height: '4.6rem',
     padding: 0,
     fontSize: 18,
-    lineHeight: '18px'
+    lineHeight: '18px',
   },
   '& div.MuiInputBase-root input': {
     paddingLeft: '20px',
