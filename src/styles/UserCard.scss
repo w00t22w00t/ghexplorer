@@ -1,0 +1,76 @@
+@import 'utils';
+
+.user-card {
+  margin-top: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 2.4rem;
+
+  @include minw($sm) {
+    padding: 2.4rem 4.8rem;
+  }
+
+  &__info {
+    width: calc(100% - 10rem);
+
+    @include minw($sm) {
+      width: calc(100% - 20rem);
+    }
+  }
+
+  &__name {}
+
+  &__link {
+    margin-top: 0.8rem;
+    display: block;
+  }
+
+  &__date {
+    margin-top: 0.8rem;
+  }
+
+  &__details {
+    margin-top: 1.2rem;
+    padding: 0.8rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    // background: #e5eaff;
+    background: $white;
+    border-radius: 0.8rem;
+
+    @include minw($sm) {
+      margin-top: 2.4rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    & li {
+      display: flex;
+      justify-content: space-between;
+      
+
+      @include minw($sm) {
+        flex-direction: column;
+      }
+
+      @include maxw($sm) {
+        &:not(:first-of-type) {
+          margin-top: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &__li-title {
+    font-size: 1.6rem;
+  }
+
+  &__li-amount {
+
+    @include minw($sm) {
+      margin-top: 0.8rem;
+    }
+  }
+}
