@@ -66,6 +66,7 @@ function App() {
       <main className="main">
         <div className="container">
           <div className="App__box">
+            <h1 className="App__title">Github profile finder</h1>
             <UserSearch fetch={fetchUser} search={search} searchHandler={searchHandler} />
 
             {loaded && isUser && <UserCard user={user} />}

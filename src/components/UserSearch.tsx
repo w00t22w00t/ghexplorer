@@ -17,6 +17,7 @@ const UserSearch: FC<UserSearchProps> = ({ fetch, search, searchHandler }) => {
         component="form"
         onSubmit={fetch}
         sx={{
+          marginTop: { xs: '12px', sm: '20px' },
           padding: { xs: '12px 20px', sm: '20px 40px' },
           display: 'flex',
           gap: '10px',
